@@ -1,11 +1,11 @@
 {
-  "name": "qvft-website",
-  "description": "Website for the Queen's Vertical Farming Team",
+  "name": "patrick-singal",
+  "description": "Patrick Singal's personal website",
   "version": "1.0.0",
   "scripts": {
     "dev": "sapper dev",
     "build": "npm run webpGen && sapper build --legacy",
-    "export": "npm run webpGen && sapper export --legacy --entry /ceec-survey && cp static/QVFT_Sponsorship.pdf __sapper__/export/QVFT_Sponsorship.pdf",
+    "export": "npm run webpGen && cp static/QVFT_Sponsorship.pdf __sapper__/export/QVFT_Sponsorship.pdf",
     "start": "node __sapper__/build",
     "cy:run": "cypress run",
     "cy:open": "cypress open",
