@@ -3,15 +3,15 @@
   import FaEnvelope from "svelte-icons/fa/FaEnvelope.svelte";
   import FaLinkedin from "svelte-icons/fa/FaLinkedin.svelte";
   import FaGithub from "svelte-icons/fa/FaGithub.svelte";
-  export let team;
+  export let portfolio;
 
-  let selectedMember;
+  let selectedProject;
 
-  const showMember = member => {
-    selectedMember = member;
-    if (selectedMember) {
+  const showProject = project => {
+    selectedProject = project;
+    if (selectedProject) {
       document.body.style.overflow = "hidden";
-      gtag("event", "view_item", { event_label: selectedMember.name });
+      gtag("event", "view_item", { event_label: selectedProject.name });
     } else {
       document.body.style.overflow = "visible";
     }
@@ -29,10 +29,10 @@
     position: relative;
   }
 
-  .teamMember.clickable {
+  .portfolioProject.clickable {
     cursor: pointer;
   }
-  .imageWrapper .teamMemberImage > * {
+  .imageWrapper .portfolioProjectImage > * {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -69,7 +69,7 @@
     }
   }
 
-  div.team {
+  div.portfolio {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,7 +77,7 @@
     margin: 3rem auto 0;
     max-width: calc(370px * 3);
   }
-  div.teamMember {
+  div.portfolioProject {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -211,63 +211,63 @@
   }
 </style>
 
-{#if selectedMember}
+{#if selectedProject}
   <div
     class="modal"
     in:fade={{ duration: 100 }}
-    on:click={() => showMember(null)}>
+    on:click={() => showProject(null)}>
     <div class="modalContent contentWrapper">
       <div class="modalHead">
         <div class="modalImageWrapper">
-          <picture class="teamMemberImage">
+          <picture class="portfolioProjectImage">
             <source
-              srcset="{`/team/${selectedMember.image}`}.webp"
+              srcset="{`/portfolio/${selectedProject.image}`}.webp"
               type="image/webp" />
             <source
-              srcset="{`/team/${selectedMember.image}`}.jpg"
+              srcset="{`/portfolio/${selectedProject.image}`}.jpg"
               type="image/jpeg" />
             <img
-              src="{`/team/${selectedMember.image}`}.jpg"
-              alt={selectedMember.name} />
+              src="{`/portfolio/${selectedProject.image}`}.jpg"
+              alt={selectedProject.name} />
           </picture>
         </div>
         <div class="nameAndPosition">
-          <h3>{selectedMember.name}</h3>
-          <div class="modalPosition">{selectedMember.position}</div>
+          <h3>{selectedProject.name}</h3>
+          <div class="modalPosition">{selectedProject.position}</div>
         </div>
       </div>
-      <p class="blurb">{selectedMember.blurb}</p>
+      <p class="blurb">{selectedProject.blurb}</p>
       <div class="modalContact">
-        {#if selectedMember.email}
+        {#if selectedProject.email}
           <a
             target="_blank"
             rel="noopener noreferrer"
             on:click={stopPropagation}
-            href="mailto:{selectedMember.email}">
+            href="mailto:{selectedProject.email}">
             <span class="iconWrapper">
               <FaEnvelope />
             </span>
             <span>Email</span>
           </a>
         {/if}
-        {#if selectedMember.linkedIn}
+        {#if selectedProject.linkedIn}
           <a
             target="_blank"
             rel="noopener noreferrer"
             on:click={stopPropagation}
-            href="https://www.linkedin.com/in/{selectedMember.linkedIn}/">
+            href="https://www.linkedin.com/in/{selectedProject.linkedIn}/">
             <span class="iconWrapper">
               <FaLinkedin />
             </span>
             <span>LinkedIn</span>
           </a>
         {/if}
-        {#if selectedMember.gitHub}
+        {#if selectedProject.gitHub}
           <a
             target="_blank"
             rel="noopener noreferrer"
             on:click={stopPropagation}
-            href="https://github.com/{selectedMember.gitHub}">
+            href="https://github.com/{selectedProject.gitHub}">
             <span class="iconWrapper">
               <FaGithub />
             </span>
@@ -278,54 +278,54 @@
     </div>
   </div>
 {/if}
-<div class="team {selectedMember ? 'noScroll' : ''}">
-  {#each team as member}
+<div class="portfolio {selectedProject ? 'noScroll' : ''}">
+  {#each portfolio as project}
     <div
-      class="teamMember {member.blurb ? 'clickable' : ''}"
+      class="portfolioProject {project.blurb ? 'clickable' : ''}"
       on:click={() => {
-        if (member.blurb) {
-          showMember(member);
+        if (project.blurb) {
+          showProject(project);
         }
       }}>
       <div class="imageWrapper">
-        <picture class="teamMemberImage">
-          <source srcset="{`/team/${member.image}`}.webp" type="image/webp" />
-          <source srcset="{`/team/${member.image}`}.jpg" type="image/jpeg" />
-          <img src="{`/team/${member.image}`}.jpg" alt={member.name} />
+        <picture class="portfolioProjectImage">
+          <source srcset="{`/portfolio/${project.image}`}.webp" type="image/webp" />
+          <source srcset="{`/portfolio/${project.image}`}.jpg" type="image/jpeg" />
+          <img src="{`/portfolio/${project.image}`}.jpg" alt={project.name} />
         </picture>
         <div class="caption">
-          <div class="name">{member.name}</div>
-          <div class="position">{member.position}</div>
+          <div class="name">{project.name}</div>
+          <div class="position">{project.position}</div>
           <div class="contact">
-            {#if member.email}
+            {#if project.email}
               <div>
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
                   on:click={stopPropagation}
-                  href="mailto:{member.email}">
+                  href="mailto:{project.email}">
                   <FaEnvelope />
                 </a>
               </div>
             {/if}
-            {#if member.linkedIn}
+            {#if project.linkedIn}
               <div>
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
                   on:click={stopPropagation}
-                  href="https://www.linkedin.com/in/{member.linkedIn}">
+                  href="https://www.linkedin.com/in/{project.linkedIn}">
                   <FaLinkedin />
                 </a>
               </div>
             {/if}
-            {#if member.gitHub}
+            {#if project.gitHub}
               <div>
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
                   on:click={stopPropagation}
-                  href="https://github.com/{member.gitHub}">
+                  href="https://github.com/{project.gitHub}">
                   <FaGithub />
                 </a>
               </div>
