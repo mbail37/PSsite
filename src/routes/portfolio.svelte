@@ -1,26 +1,26 @@
 <script context="module">
   export async function preload() {
     const result = await this.fetch("index.json");
-    const { team } = await result.json();
+    const { projectpics } = await result.json();
     return {
-      team
+      projectpics
     };
   }
 </script>
 
 <script>
   import { onMount } from "svelte";
-  import TeamImages from "../components/TeamImages.svelte";
+  import PortfolioImages from "../components/PortfolioImages.svelte";
   import PageHeader from "../components/PageHeader.svelte";
 
   onMount(async () => {
     gtag("config", "UA-93549235-6", { page_path: "/design-portfolio" });
   });
-  export let team = [];
+  export let projectpics = [];
 </script>
 
 <svelte:head>
   <title>Design Portfolio</title>
 </svelte:head>
 <PageHeader>Design Portfolio</PageHeader>
-<TeamImages {team} />
+<PortfolioImages{projectpics} />
