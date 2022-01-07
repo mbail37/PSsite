@@ -85,32 +85,27 @@
         <picture class="logo">
           <source srcset="logo.webp" type="image/webp" />
           <source srcset="logo.png" type="image/png" />
-          <img src="logo.png" alt="Queen's Vertical Farming Team" />
+          <img src="logo.png" alt="Patrick Singal" />
         </picture>
       </a>
     </div>
     <ul>
       <li>
-        <a class:selected={segment === 'what-we-do'} href="what-we-do">
-          What We Do
+        <a class:selected={segment === 'bio'} href="bio">
+          Bio
         </a>
       </li>
       <li>
-        <a class:selected={segment === 'team'} href="team">Our Team</a>
+        <a class:selected={segment === 'portfolio'} href="portfolio">Design Portfolio</a>
       </li>
       <li>
-        <a class:selected={segment === 'sponsorship'} href="sponsorship">
-          Sponsorship
-        </a>
-      </li>
-      <li>
-        <a class:selected={segment === 'hiring'} href="hiring">
-          Hiring
+        <a class:selected={segment === 'cv'} href="cv">
+          CV
         </a>
       </li>
       <li>
         <a class:selected={segment === 'dashboard'} href="dashboard">
-          Dashboard
+          QVFT Dashboard [Beta]
         </a>
       </li>
     </ul>
