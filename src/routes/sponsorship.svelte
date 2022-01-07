@@ -2,7 +2,7 @@
   import { onMount } from "svelte";
   import PageHeader from "../components/PageHeader.svelte";
   onMount(async () => {
-    gtag("config", "UA-93549235-6", { page_path: "/sponsorship" });
+    gtag("config", "UA-93549235-6", { page_path: "/CV" });
   });
 </script>
 
@@ -44,9 +44,9 @@
 </style>
 
 <svelte:head>
-  <title>Queen's Vertical Farming Team</title>
+  <title>Patrick Singal</title>
 </svelte:head>
-<PageHeader>Sponsorship</PageHeader>
+<PageHeader>CV</PageHeader>
 <div class="contentWrapper desktop">
   <p>
     <a
@@ -60,11 +60,11 @@
     <object
       width="100%"
       height="100%"
-      title="Sponsorship"
+      title="Patrick Singal CV"
       data="QVFT_Sponsorship.pdf"
       type="application/pdf">
       <embed
-        title="Sponsorship"
+        title="Patrick Singal CV"
         width="100%"
         src="QVFT_Sponsorship.pdf"
         type="application/pdf" />
