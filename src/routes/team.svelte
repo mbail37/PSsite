@@ -14,13 +14,13 @@
   import PageHeader from "../components/PageHeader.svelte";
 
   onMount(async () => {
-    gtag("config", "UA-93549235-6", { page_path: "/team" });
+    gtag("config", "UA-93549235-6", { page_path: "/design-portfolio" });
   });
   export let team = [];
 </script>
 
 <svelte:head>
-  <title>Our Team | Queen's Vertical Farming Team</title>
+  <title>Design Portfolio</title>
 </svelte:head>
-<PageHeader>Our Team</PageHeader>
+<PageHeader>Design Portfolio</PageHeader>
 <TeamImages {team} />
