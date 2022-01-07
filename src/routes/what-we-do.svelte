@@ -75,7 +75,7 @@
   <title>Queen's Vertical Farming Team</title>
 </svelte:head>
 
-<PageHeader>What We Do</PageHeader>
+<PageHeader>Bio</PageHeader>
 <div class="contentWrapper">
   <h2>Welcome to my site!</h2>
   <p>I am a senior mechanical engineering student at Queen&#x27;s University in Kingston, Canada. A key interest of mine is designing products and systems that address environmental and other global issues. With this motivation, I founded (and currently manage) the Queen&#x27;s Vertical Farming Team, which aims to grow the food of the future by designing an automated aeroponic cultivation system. I also co-designed a low-cost COVID-19 ventilator, which ranked in the top 65 of 1,029 international submissions at the 2020 Code Life Ventilator Challenge. </p>
