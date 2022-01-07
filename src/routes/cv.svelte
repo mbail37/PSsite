@@ -53,7 +53,7 @@
       href="QVFT_Sponsorship.pdf"
       download
       on:click={() => gtag('event', 'download sponsorship package')}>
-      Download our sponsorship package here
+      Download CV here
     </a>
   </p>
   <div class="pdfWrapper">
@@ -72,5 +72,5 @@
   </div>
 </div>
 <div class="contentWrapper mobile">
-  <a class="button" href="QVFT_Sponsorship.pdf">View Sponsorship Package</a>
+  <a class="button" href="QVFT_Sponsorship.pdf">View CV</a>
 </div>
