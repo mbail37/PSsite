@@ -1,9 +1,9 @@
 <script context="module">
   export async function preload() {
     const result = await this.fetch("index.json");
-    const { projectpics } = await result.json();
+    const { portfolio } = await result.json();
     return {
-      projectpics
+      portfolio
     };
   }
 </script>
@@ -16,11 +16,11 @@
   onMount(async () => {
     gtag("config", "UA-93549235-6", { page_path: "/design-portfolio" });
   });
-  export let projectpics = [];
+  export let portfolio = [];
 </script>
 
 <svelte:head>
   <title>Design Portfolio</title>
 </svelte:head>
 <PageHeader>Design Portfolio</PageHeader>
-<PortfolioImages{projectpics} />
+<PortfolioImages{portfolio} />
