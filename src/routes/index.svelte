@@ -74,7 +74,7 @@
 </style>
 
 <svelte:head>
-  <title>Queen's Vertical Farming Team</title>
+  <title>Patrick Singal</title>
 </svelte:head>
 <div class="root">
   <div class="fullScreen" style="background-image: url('background.webp')">
@@ -84,7 +84,7 @@
           <picture class="logo">
             <source srcset="logo-white.webp" type="image/webp" />
             <source srcset="logo-white.png" type="image/png" />
-            <img src="logo-white.webp" alt="Queen's Vertical Farming Team" />
+            <img src="logo-white.webp" alt="Patrick Singal" />
           </picture>              
        </div>
         <p>
