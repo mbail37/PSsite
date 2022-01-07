@@ -2,7 +2,7 @@
   import { onMount } from "svelte";
   import PageHeader from "../components/PageHeader.svelte";
   onMount(async () => {
-    gtag("config", "UA-93549235-6", { page_path: "/CV" });
+    gtag("config", "UA-93549235-6", { page_path: "/cv" });
   });
 </script>
 
@@ -52,7 +52,7 @@
     <a
       href="QVFT_Sponsorship.pdf"
       download
-      on:click={() => gtag('event', 'download sponsorship package')}>
+      on:click={() => gtag('event', 'download cv')}>
       Download CV here
     </a>
   </p>
