@@ -72,7 +72,7 @@
 </style>
 
 <svelte:head>
-  <title>Queen's Vertical Farming Team</title>
+  <title>Patrick Singal</title>
 </svelte:head>
 
 <PageHeader>Bio</PageHeader>
