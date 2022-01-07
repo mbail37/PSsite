@@ -3,7 +3,7 @@
   import { onMount } from "svelte";
 
   onMount(async () => {
-    gtag("config", "UA-93549235-6", { page_path: "/what-we-do" });
+    gtag("config", "UA-93549235-6", { page_path: "/bio" });
   });
 </script>
 
