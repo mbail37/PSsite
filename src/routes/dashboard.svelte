@@ -26,6 +26,6 @@
   
 <div>
     <!-- Embedded Dashboard Page-->
-    <iframe src="https://directorqvft.pythonanywhere.com/" class="dashboard" title="Dashboard"></iframe>
+    <iframe src="https://directorqvft.pythonanywhere.com/" class="dashboard" title="QVFT Dashboard (Beta)"></iframe>
 </div>
   
