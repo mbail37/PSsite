@@ -2,7 +2,7 @@
   import { onMount } from "svelte";
   import PageHeader from "../components/PageHeader.svelte";
   onMount(async () => {
-    gtag("config", "UA-93549235-6", { page_path: "/hiring" });
+    gtag("config", "UA-93549235-6", { page_path: "/cv" });
   });
 
   const info = [
@@ -113,33 +113,11 @@
 </style>
 
 <svelte:head>
-  <title>Queen's Vertical Farming Team</title>
+  <title>Patrick Singal</title>
 </svelte:head>
 
-<PageHeader>Hiring</PageHeader>
+<PageHeader>CV</PageHeader>
 <div class="contentWrapper">
-  <h2>Description</h2>
-  <p>
-    Founded in September 2019, QVFT is Canada's first student-led university
-    vertical farming design team. Vertical farming is a hyper-efficient,
-    sustainable food cultivation method which is projected to become a major
-    contributor to global food production in the coming decades. We are now
-    seeking passionate, creative, and driven individuals to join us for the 2021-22 school year. Individual roles are described in the Hiring Package below. Apply before 11:59 PM on Tuesday, March 16th, 2021.
-  </p>
-  <div class="infoColumns">
-    {#each info as item}
-      <div class="item">
-        <div class="imageWrapper">
-          <picture>
-            <source srcset="{item.img}.webp" type="image/webp" />
-            <source srcset="{item.img}.png" type="image/png" />
-            <img src="{item.img}.webp" alt={item.label} />
-          </picture>
-        </div>
-        <div class="itemLabel">{item.label}</div>
-      </div>
-    {/each}
-  </div>
   <div id="hiringPackageSection">
     <h2>Hiring Package</h2>
     <div class="pdfWrapper desktop">
@@ -150,26 +128,15 @@
         data="QVFT_Hiring.pdf"
         type="application/pdf">
         <embed
-          title="Hiring"
+          title="Patrick Singal CV"
           width="100%"
           src="QVFT_Hiring.pdf"
           type="application/pdf" />
       </object>
     </div>
     <div class="buttonWrapper mobile">
-      <a class="button" href="QVFT_Hiring.pdf">View Hiring Package</a>
+      <a class="button" href="QVFT_Hiring.pdf">View CV</a>
     </div>
   </div>
-  <h2>Apply</h2>
-  <iframe
-    src="https://docs.google.com/forms/d/e/1FAIpQLSctXBU523eIURoJwF9n6CSE00LbIPKsDWAz8CUCvbfTp1q9Mw/viewform?usp=sf_link?embedded=true"
-    width="100%"
-    height="1000"
-    frameborder="0"
-    marginheight="0"
-    marginwidth="0"
-    title="Hiring form">
-    Loading…
-  </iframe>
   
 </div>
