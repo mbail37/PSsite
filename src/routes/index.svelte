@@ -13,7 +13,7 @@
 
   import Timeline from "../components/Timeline.svelte";
   import InfoColumns from "../components/InfoColumns.svelte";
-  import SponsorImages from "../components/SponsorImages.svelte";
+
 
   onMount(async () => {
     gtag("config", "UA-93549235-6", { page_path: "/" });
