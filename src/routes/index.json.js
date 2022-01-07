@@ -1,9 +1,9 @@
 import dateformat from "dateformat";
 
 function getData() {
-  const teamFile = require("../../../content/team.json");
+  const portfolioFile = require("../../../content/portfolio.json");
 
-  const team = teamFile
+  const portfolio = portfolioFile
     .filter(member => !member.hidden)
     .map(member => {
       return {
@@ -27,13 +27,13 @@ function getData() {
       ...item
     }))
     .sort((a, b) => new Date(a.date) - new Date(b.date));
-  return { team, timeline };
+  return { portfolio, timeline };
 }
 
 export function get(req, res) {
   res.writeHead(200, {
     "Content-Type": "application/json"
   });
-  const { team, timeline } = getData();
-  res.end(JSON.stringify({ team, timeline }));
+  const { portfolio, timeline } = getData();
+  res.end(JSON.stringify({ portfolio, timeline }));
 }
