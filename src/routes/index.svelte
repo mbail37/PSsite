@@ -1,98 +1,26 @@
-<!-- <script context="module">
-  export async function preload() {
-    const result = await this.fetch("index.json");
-    const { timeline } = await result.json();
-    return {
-      timeline
-    };
-  }
-</script> -->
-<!--<script>
+<script>
+  import HomeHeader from "../components/HomeHeader.svelte";
   // import { onMount } from "svelte";
 
-  // import Timeline from "../components/Timeline.svelte";
-  // import InfoColumns from "../components/InfoColumns.svelte";
-
-
   // onMount(async () => {
-  //   gtag("config", "UA-93549235-6", { page_path: "/" });
+  //   gtag("config", "UA-93549235-6", { page_path: "/bio" });
   // });
-
-  // export let timeline = [];
-</script>-->
-
-<style>
-  div.fullScreen {
-    width: 100%;
-    background-clip: border-box;
-    background-origin: padding-box;
-    background-position-x: 50%;
-    background-position-y: 50%;
-    background-size: cover;
-    box-sizing: border-box;
-  }
-
-  div.fullScreen p {
-    font-style: bold;
-    font-size: 2rem;
-    line-height: 2.5rem;
-    font-weight: 500;
-    /*color: #D03335;*/
-    color: #eee;
-    /*text-shadow: 5px 5px 5px #eee;*/
-    text-shadow: 0px 0px 1px #222;
-  }
-  div.fullScreen > div.fullScreenContent {
-    min-height: calc(100vh - 3rem); /* 3rem is nav height */
-    background-color: rgba(0, 0, 0, 0); /* 4th arg was originally 0.5 to create tinting */
-    display: flex;
-    justify-content: left;
-    align-items: left;
-    padding: 0rem 0;
-    box-sizing: border-box;
-  }
-
-  div.infoColumnSection,
-  div.timelineSection {
-    background-color: #f9f9f9;
-    padding: 3rem 0;
-  }
-
-  div.partnersSection {
-    margin-bottom: 6rem;
-    padding: 3rem 0 1rem;
-  }
-
-  div.logoWrapper {
-    max-height: 14rem;
-    max-width: 14rem;
-    margin: 3 auto 3rem;
-  }
-  .logo > * {
-    height: 100%;
-    width: 100%;
-  }
-</style>
+</script>
 
 <svelte:head>
   <title>Patrick Singal</title>
 </svelte:head>
-<div class="root">
-  <div class="fullScreen" style="background-image: url('background-source.webp')">
-    <div class="fullScreenContent">
-      <div class="contentWrapper">
-        <div class="logoWrapper">
-          <picture class="logo">
-            <source srcset="circleHeadshot.webp" type="image/webp" />
-            <source srcset="circleHeadshot.png" type="image/png" />
-            <img src="circleHeadshot.webp" alt="Patrick Singal" />
-          </picture>              
-       </div>
-        <p>
-          Patrick Singal
-        </p>
-      </div>
-    </div>
-  </div>
 
+<HomeHeader></HomeHeader>
+<div class="contentWrapper">
+  <h2>Welcome to my site!</h2>
+  <p>I am a senior mechanical engineering student at Queen&#x27;s University in Kingston, Canada. A key interest of mine is designing products and systems that address environmental and other global issues. With this motivation, I founded (and currently manage) the Queen&#x27;s Vertical Farming Team, which aims to grow the food of the future by designing an automated aeroponic cultivation system. I also co-designed a low-cost COVID-19 ventilator, which ranked in the top 65 of 1,029 international submissions at the 2020 Code Life Ventilator Challenge. </p>
+  <p>I am also an investment associate at Front Row Ventures, Canada’s largest student venture capital fund. This firm collectively controls &gt;$800K in investible funds and administers $25K cheque sizes to student-founded technology start-ups. Being part of this organization has provided a wealth of knowledge that was not directly available through my engineering education.</p>
+  <p>I conduct research with the Rival Lab at Queen&#x27;s University, which focuses on bio-inspired experimental fluid dynamics. My first project was designing a complex CAD model of an airfoil, which contains an embedded network of pressure-measurement channels, taps, and transducer ports that are geometrically optimized to reduce noise and signal error. Currently, I am assisting with running towing tank experiments on airfoils across a range of boundary conditions to collect data for training a predictive algorithm for sparse pressure data in gusty, turbulent flows.</p>
+  <p>For my capstone project, I am involved in a year-long industry partnership with a manufacturer of heavy-duty electric vehicles. Our team is designing an optimized thermal management system that minimizes redundancy while maintaining the sensitive operating temperatures of Li-ion batteries, motors, and auxiliary components. We validate this design using multi-objective optimization techniques, which are computed using simulations and numerical models that we have developed. I am also completing an undergraduate thesis that involves using ANSYS Fluent to simulate turbulent, compressible flow through a rotating detonation engine fuel supply valve.</p>
+  <p>Further information about these projects and other experiences is available in my CV and Design Portfolio. I am always looking to connect with like-minded people and exchange ideas. Please feel free to reach out!</p>
+
+  <h2>Contact Information</h2>
+  <p>Email: p.singal@queensu.ca</p>
+  <p>Phone: 647-938-8135</p>
 </div>

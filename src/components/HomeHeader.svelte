@@ -23,12 +23,26 @@
     height: 100%;
     min-height: 16rem;
   }
+  div.logoWrapper {
+    max-height: 12rem;
+    max-width: 12rem;
+    margin: 0;
+    padding: 0;
+  }
+  .logo > * {
+    height: 100%;
+    width: 100%;
+  }
 </style>
 
 <div class="pageHeader" style="background-image: url('background.webp');">
     <div class="contentWrapper">
-      <h1>
-        <slot />
-      </h1>
+        <div class="logoWrapper">
+          <picture class="logo">
+            <source srcset="circleHeadshot.webp" type="image/webp" />
+            <source srcset="circleHeadshot.png" type="image/png" />
+            <img src="circleHeadshot.webp" alt="Patrick Singal" />
+          </picture>              
+       </div>
     </div>
 </div>

@@ -91,11 +91,6 @@
     </div>
     <ul>
       <li>
-        <a class:selected={segment === 'bio'} href="bio">
-          Bio
-        </a>
-      </li>
-      <li>
         <a class:selected={segment === 'portfolio'} href="portfolio">Design Portfolio</a>
       </li>
       <li>
@@ -105,7 +100,7 @@
       </li>
       <li>
         <a class:selected={segment === 'dashboard'} href="dashboard">
-          QVFT Dashboard
+          QVFT Dash
         </a>
       </li>
     </ul>
