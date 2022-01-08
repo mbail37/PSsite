@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "sapper dev",
-    "build": "react-scripts build",
+    "build": "npm run webpGen && sapper build --legacy",
     "export": "npm run webpGen && sapper export --legacy --entry /ceec-survey && cp static/QVFT_Sponsorship.pdf __sapper__/export/QVFT_Sponsorship.pdf",
     "start": "node __sapper__/build",
     "cy:run": "cypress run",
