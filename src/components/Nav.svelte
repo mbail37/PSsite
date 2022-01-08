@@ -105,7 +105,7 @@
       </li>
       <li>
         <a class:selected={segment === 'dashboard'} href="dashboard">
-          QVFT Dashboard [Beta]
+          QVFT Dashboard
         </a>
       </li>
     </ul>
