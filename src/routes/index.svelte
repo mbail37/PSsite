@@ -35,12 +35,12 @@
   div.fullScreen p {
     font-style: bold;
     font-size: 2rem;
-    line-height: 3rem;
+    line-height: 2.5rem;
     font-weight: 500;
     /*color: #D03335;*/
     color: #eee;
     /*text-shadow: 5px 5px 5px #eee;*/
-    text-shadow: 2px 2px 2px #222;
+    text-shadow: 0px 0px 1px #222;
   }
   div.fullScreen > div.fullScreenContent {
     min-height: calc(100vh - 3rem); /* 3rem is nav height */
@@ -66,7 +66,7 @@
   div.logoWrapper {
     max-height: 17rem;
     max-width: 17rem;
-    margin: -3 auto 3rem;
+    margin: 0 auto -3rem;
   }
   .logo > * {
     height: 100%;
