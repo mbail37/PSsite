@@ -1,10 +1,10 @@
 <script>
   import PageHeader from "../components/PageHeader.svelte";
-  import { onMount } from "svelte";
+  // import { onMount } from "svelte";
 
-  onMount(async () => {
-    gtag("config", "UA-93549235-6", { page_path: "/bio" });
-  });
+  // onMount(async () => {
+  //   gtag("config", "UA-93549235-6", { page_path: "/bio" });
+  // });
 </script>
 
 <style>

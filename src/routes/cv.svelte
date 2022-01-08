@@ -1,9 +1,9 @@
 <script>
-  import { onMount } from "svelte";
+  // import { onMount } from "svelte";
   import PageHeader from "../components/PageHeader.svelte";
-  onMount(async () => {
-    gtag("config", "UA-93549235-6", { page_path: "/cv" });
-  });
+  // onMount(async () => {
+  //   gtag("config", "UA-93549235-6", { page_path: "/cv" });
+  // });
 </script>
 
 <style>

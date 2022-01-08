@@ -11,7 +11,7 @@
     selectedProject = project;
     if (selectedProject) {
       document.body.style.overflow = "hidden";
-      gtag("event", "view_item", { event_label: selectedProject.name });
+      //gtag("event", "view_item", { event_label: selectedProject.name });
     } else {
       document.body.style.overflow = "visible";
     }

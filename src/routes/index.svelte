@@ -1,4 +1,4 @@
-<script context="module">
+<!-- <script context="module">
   export async function preload() {
     const result = await this.fetch("index.json");
     const { timeline } = await result.json();
@@ -6,21 +6,20 @@
       timeline
     };
   }
-</script>
+</script> -->
+<!--<script>
+  // import { onMount } from "svelte";
 
-<script>
-  import { onMount } from "svelte";
-
-  import Timeline from "../components/Timeline.svelte";
-  import InfoColumns from "../components/InfoColumns.svelte";
+  // import Timeline from "../components/Timeline.svelte";
+  // import InfoColumns from "../components/InfoColumns.svelte";
 
 
-  onMount(async () => {
-    gtag("config", "UA-93549235-6", { page_path: "/" });
-  });
+  // onMount(async () => {
+  //   gtag("config", "UA-93549235-6", { page_path: "/" });
+  // });
 
-  export let timeline = [];
-</script>
+  // export let timeline = [];
+</script>-->
 
 <style>
   div.fullScreen {
