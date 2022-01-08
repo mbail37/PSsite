@@ -2,13 +2,13 @@
     {
     "title": "Rival Lab",
     "subtitle": "NACA0012 Airfoil",
-    "image": "placeholder",
+    "image": "naca0012",
     "blurb": "This NACA0012 airfoil was my first project with the Rival Lab, which focuses on bio-inspired experimental fluid dynamics. It is a complex CAD model containing an embedded network of pressure-measurement channels, taps, and transducer ports that are geometrically optimized to reduce noise and signal error. The model is now being 3D-printed by our partners at EPFL in Switzerland to be used for water-tunnel experiments."
   },
   {
     "title": "Capstone Project",
     "subtitle": "Thermal Management System Optimization",
-    "image": "placeholder",
+    "image": "capstone",
     "blurb": "I am involved in a year-long industry partnership with a manufacturer of heavy-duty electric vehicles. Our team is designing an optimized thermal management system that minimizes redundancy while maintaining the sensitive operating temperatures of Li-ion batteries, motors, and auxiliary components. We validate this design using multi-objective optimization techniques, which are computed using simulations and numerical models that we have developed."
   },
   {
@@ -50,13 +50,13 @@
   {
     "title": "Code Life Ventilator Challenge",
     "subtitle": "AirMax Dual-Mode COVID-19 Ventilator",
-    "image": "placeholder",
+    "image": "ventilator",
     "blurb": "Last spring, I collaborated with a team of professional engineers to develop the “AirMax DMV”, a low-cost, oxygen-generating mechanical ventilator intended to address shortages caused by COVID-19 in developing countries. Our design ranked in the top 65 of 1,029 international submissions at the Code Life Ventilator Challenge in March 2020. One of my contributions involved computational fluid dynamics, where I applied the Brinkman equations for flow through porous media. The goal of this process was to quantify the degree of oxygen generation within zeolite adsorption cylinders."
   },
   {
     "title": "Hospital Heating System",
     "subtitle": "Piping & Instrumentation Diagram",
-    "image": "placeholder",
+    "image": "hvac-system",
     "blurb": "A large public hospital had an extremely complex HVAC system that had undergone 6 previous partial renovations. As such, no comprehensive up-to-date P&ID of the entire system existed. I pieced together mechanical drawings from each of these changes and added in up-to-date instrumentation data. I paid meticulous attention to detail, ensuring that the end product was faithful to the source material and contained a maximal density of useful information."
   }
 ]
