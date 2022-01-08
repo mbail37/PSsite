@@ -64,8 +64,8 @@
   }
 
   div.logoWrapper {
-    max-height: 17rem;
-    max-width: 17rem;
+    max-height: 14rem;
+    max-width: 14rem;
     margin: 0 auto -3rem;
   }
   .logo > * {
@@ -89,7 +89,7 @@
           </picture>              
        </div>
         <p>
-          Welcome to my site!
+          Patrick Singal
         </p>
       </div>
     </div>
