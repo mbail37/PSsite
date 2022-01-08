@@ -42,7 +42,7 @@
   }
   div.fullScreen > div.fullScreenContent {
     min-height: calc(100vh - 3rem); /* 3rem is nav height */
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0); /* 4th arg was originally 0.5 to create tinting */
     display: flex;
     justify-content: center;
     align-items: center;
