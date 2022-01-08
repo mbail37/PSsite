@@ -74,7 +74,7 @@
 
   picture.logo > * {
     height: 2rem;
-    width: 7rem;
+    width: 7.6rem;
   }
 </style>
 
