@@ -34,10 +34,10 @@
 
   div.fullScreen p {
     font-style: italic;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     line-height: 3rem;
     font-weight: 500;
-    color: #eee;
+    color: #D03335;
     text-shadow: 0px 0px 1px #222;
   }
   div.fullScreen > div.fullScreenContent {
