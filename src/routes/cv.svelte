@@ -52,7 +52,7 @@
     <a
       href="QVFT_Sponsorship.pdf"
       download
-      on:click={() => gtag('event', 'download cv')}>
+      on:click={() => gtag('event', 'download sponsorship package')}>
       Download CV here
     </a>
   </p>
