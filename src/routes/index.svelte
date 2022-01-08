@@ -76,7 +76,7 @@
   <title>Patrick Singal</title>
 </svelte:head>
 <div class="root">
-  <div class="fullScreen" style="background-image: url('background.webp')">
+  <div class="fullScreen" style="background-image: url('background-source.webp')">
     <div class="fullScreenContent">
       <div class="contentWrapper">
         <div class="logoWrapper">
