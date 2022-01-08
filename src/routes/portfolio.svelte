@@ -13,9 +13,9 @@
   import PortfolioImages from "../components/PortfolioImages.svelte";
   import PageHeader from "../components/PageHeader.svelte";
 
-  onMount(async () => {
-    gtag("config", "UA-93549235-6", { page_path: "/portfolio" });
-  });
+//   onMount(async () => {
+//     gtag("config", "UA-93549235-6", { page_path: "/portfolio" });
+//   });
   export let portfolio = [];
 </script>
 
@@ -23,4 +23,4 @@
   <title>Design Portfolio</title>
 </svelte:head>
 <PageHeader>Design Portfolio</PageHeader>
-<PortfolioImages{portfolio} />
+<PortfolioImages {portfolio} />
