@@ -33,12 +33,14 @@
   }
 
   div.fullScreen p {
-    font-style: italic;
+    font-style: bold;
     font-size: 1.1rem;
     line-height: 3rem;
     font-weight: 500;
-    color: #D03335;
-    text-shadow: 5px 5px 5px #eee;
+    /*color: #D03335;*/
+    color: #eee;
+    /*text-shadow: 5px 5px 5px #eee;*/
+    text-shadow: 1px 1px 1px #222;
   }
   div.fullScreen > div.fullScreenContent {
     min-height: calc(100vh - 3rem); /* 3rem is nav height */
