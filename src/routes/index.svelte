@@ -48,7 +48,7 @@
     display: flex;
     justify-content: left;
     align-items: left;
-    padding: 3rem 0;
+    padding: 0rem 0;
     box-sizing: border-box;
   }
 
@@ -66,7 +66,7 @@
   div.logoWrapper {
     max-height: 14rem;
     max-width: 14rem;
-    margin: 0 auto -3rem;
+    margin: 3 auto 3rem;
   }
   .logo > * {
     height: 100%;

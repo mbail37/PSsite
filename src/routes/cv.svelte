@@ -50,9 +50,9 @@
 <div class="contentWrapper desktop">
   <p>
     <a
-      href="QVFT_Sponsorship.pdf"
+      href="Patrick-Singal-CV.pdf"
       download
-      on:click={() => gtag('event', 'download sponsorship package')}>
+      on:click={() => gtag('event', 'download cv')}>
       Download CV here
     </a>
   </p>
@@ -61,16 +61,16 @@
       width="100%"
       height="100%"
       title="Patrick Singal CV"
-      data="QVFT_Sponsorship.pdf"
+      data="Patrick-Singal-CV.pdf"
       type="application/pdf">
       <embed
         title="Patrick Singal CV"
         width="100%"
-        src="QVFT_Sponsorship.pdf"
+        src="Patrick-Singal-CV.pdf"
         type="application/pdf" />
     </object>
   </div>
 </div>
 <div class="contentWrapper mobile">
-  <a class="button" href="QVFT_Sponsorship.pdf">View CV</a>
+  <a class="button" href="Patrick-Singal-CV.pdf">View CV</a>
 </div>
