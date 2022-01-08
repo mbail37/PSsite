@@ -38,7 +38,7 @@
     line-height: 3rem;
     font-weight: 500;
     color: #D03335;
-    text-shadow: 0px 0px 1px #222;
+    text-shadow: 5px 5px 5px #eee;
   }
   div.fullScreen > div.fullScreenContent {
     min-height: calc(100vh - 3rem); /* 3rem is nav height */
