@@ -11,7 +11,6 @@
     box-shadow: 0px 3px 5px 0px rgba(34, 34, 34, 0.2);
     text-shadow: 0px 0px 1px #222;
   }
-
   h1 {
     margin: 0;
     padding: 0;
