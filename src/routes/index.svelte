@@ -81,9 +81,9 @@
       <div class="contentWrapper">
         <div class="logoWrapper">
           <picture class="logo">
-            <source srcset="logo-white.webp" type="image/webp" />
-            <source srcset="logo-white.png" type="image/png" />
-            <img src="logo-white.webp" alt="Patrick Singal" />
+            <source srcset="circleHeadshot.webp" type="image/webp" />
+            <source srcset="circleHeadshot.png" type="image/png" />
+            <img src="circleHeadshot.webp" alt="Patrick Singal" />
           </picture>              
        </div>
         <p>

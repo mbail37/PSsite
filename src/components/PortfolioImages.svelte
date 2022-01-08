@@ -224,10 +224,10 @@
               srcset="{`/portfolio/${selectedProject.image}`}.webp"
               type="image/webp" />
             <source
-              srcset="{`/portfolio/${selectedProject.image}`}.jpg"
+              srcset="{`/portfolio/${selectedProject.image}`}.png"
               type="image/jpeg" />
             <img
-              src="{`/portfolio/${selectedProject.image}`}.jpg"
+              src="{`/portfolio/${selectedProject.image}`}.webp"
               alt={selectedProject.name} />
           </picture>
         </div>
@@ -290,8 +290,8 @@
       <div class="imageWrapper">
         <picture class="portfolioProjectImage">
           <source srcset="{`/portfolio/${project.image}`}.webp" type="image/webp" />
-          <source srcset="{`/portfolio/${project.image}`}.jpg" type="image/jpeg" />
-          <img src="{`/portfolio/${project.image}`}.jpg" alt={project.name} />
+          <source srcset="{`/portfolio/${project.image}`}.png" type="image/png" />
+          <img src="{`/portfolio/${project.image}`}.webp" alt={project.name} />
         </picture>
         <div class="caption">
           <div class="name">{project.name}</div>
