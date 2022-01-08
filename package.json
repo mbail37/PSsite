@@ -14,6 +14,8 @@
   },
   "dependencies": {
     "compression": "^1.7.1",
+    "generator-svelte": "^2.2.9",
+    "node": "^17.3.0",
     "polka": "next",
     "sirv": "^0.4.0"
   },
