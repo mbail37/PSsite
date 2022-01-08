@@ -4,17 +4,17 @@ function getData() {
   const portfolioFile = require("../../../content/portfolio.json");
 
   const portfolio = portfolioFile
-    .filter(member => !member.hidden)
-    .map(member => {
+    .filter(project => !project.hidden)
+    .map(project => {
       return {
-        name: member.name,
-        position: member.position,
-        yearMajor: member.yearMajor,
-        image: member.image,
-        gitHub: member.gitHub,
-        linkedIn: member.linkedIn,
-        email: member.email,
-        blurb: member.blurb
+        name: project.name,
+        position: project.position,
+        yearMajor: project.yearMajor,
+        image: project.image,
+        gitHub: project.gitHub,
+        linkedIn: project.linkedIn,
+        email: project.email,
+        blurb: project.blurb
       };
     });
 
