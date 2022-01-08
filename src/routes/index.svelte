@@ -40,14 +40,14 @@
     /*color: #D03335;*/
     color: #eee;
     /*text-shadow: 5px 5px 5px #eee;*/
-    text-shadow: 1px 1px 1px #222;
+    text-shadow: 2px 2px 2px #222;
   }
   div.fullScreen > div.fullScreenContent {
     min-height: calc(100vh - 3rem); /* 3rem is nav height */
     background-color: rgba(0, 0, 0, 0); /* 4th arg was originally 0.5 to create tinting */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
     padding: 3rem 0;
     box-sizing: border-box;
   }
@@ -89,7 +89,7 @@
           </picture>              
        </div>
         <p>
-          “Welcome to my site!”
+          Welcome to my site!
         </p>
       </div>
     </div>
