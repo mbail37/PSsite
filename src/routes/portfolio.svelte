@@ -14,7 +14,7 @@
   import PageHeader from "../components/PageHeader.svelte";
 
   onMount(async () => {
-    gtag("config", "UA-93549235-6", { page_path: "/design-portfolio" });
+    gtag("config", "UA-93549235-6", { page_path: "/portfolio" });
   });
   export let portfolio = [];
 </script>
