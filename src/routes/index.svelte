@@ -34,7 +34,7 @@
 
   div.fullScreen p {
     font-style: bold;
-    font-size: 1.1rem;
+    font-size: 2rem;
     line-height: 3rem;
     font-weight: 500;
     /*color: #D03335;*/
