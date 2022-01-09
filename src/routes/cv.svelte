@@ -10,7 +10,7 @@
   div.pdfWrapper {
     margin-top: 2rem;
     width: 100%;
-    height: 248vh;
+    height: 298vh;
   }
   a.button {
     display: inline-flex;

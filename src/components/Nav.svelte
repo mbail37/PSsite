@@ -104,6 +104,9 @@
           QVFT Dash
         </a>
       </li>
+      <li>
+      <a href="https://www.linkedin.com/in/patricksingal" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </li>
     </ul>
   </div>
 </nav>
