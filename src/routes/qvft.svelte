@@ -18,8 +18,8 @@
     margin-top: 2rem;
     margin-left: auto;
     margin-right: auto;
-    width: 800px;
-    height: calc(800px/1.4);
+    width: 900px;
+    height: calc(900px/1.4);
   }
   a.button {
     display: inline-flex;
@@ -66,7 +66,7 @@
   <p>
     <a href="QVFT-Mechatronics-Update.pdf" download>Download Mechatronics Update</a>
   </p>
-  <!-- <div class="pdfWrapper1">
+  <div class="pdfWrapper1">
     <object
       width="100%"
       height="100%"
@@ -79,33 +79,8 @@
         src="QVFT-System-Guide.pdf"
         type="application/pdf" />
     </object>
-  </div> -->
-
-  <div id="adobe-dc-view" style="height: 720px; width: 500px;"></div>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script type="text/javascript">
-    document.addEventListener("adobe_dc_view_sdk.ready", function(){
-      var adobeDCView = new AdobeDC.View({clientId: "86a5fb0d25034a7e9dc962d0985c4044", divId: "adobe-dc-view"});
-      adobeDCView.previewFile({
-        content:{location: {url: "https://github.com/pjsingal/personalsite/blob/master/static/QVFT-System-Guide.pdf"}},
-        metaData:{fileName: "QVFT-System-Guide.pdf"}
-      }, {enableLinearization: true}, {embedMode: "SIZED_CONTAINER"});
-    });
-  </script>
-
-  <!-- <div id="adobe-dc-view" style="height: 571px; width: 800px;"></div>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script type="text/javascript">
-    document.addEventListener("adobe_dc_view_sdk.ready", function(){
-      var adobeDCView = new AdobeDC.View({clientId: "<YOUR_CLIENT_ID>", divId: "adobe-dc-view"});
-      adobeDCView.previewFile({
-        content:{location: {url: "https://github.com/pjsingal/personalsite/blob/master/static/QVFT-Mechatronics-Update.pdf"}},
-        metaData:{fileName: "QVFT-Mechatronics-Update.pdf"}
-      }, {embedMode: "SIZED_CONTAINER"});
-    });
-  </script> -->
-
-  <!-- <div class="pdfWrapper2">
+  </div>
+  <div class="pdfWrapper2">
     <object
       width="100%"
       height="100%"
@@ -118,7 +93,7 @@
         src="QVFT-Mechatronics-Update.pdf"
         type="application/pdf" />
     </object>
-  </div> -->
+  </div>
 </div>
 <div class="contentWrapper mobile">
     <a class="button" href="https://www.qvft.ca/">Queen's Vertical Farming Team Website</a>
