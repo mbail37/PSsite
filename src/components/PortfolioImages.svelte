@@ -22,8 +22,8 @@
 
 <style>
   .imageWrapper {
-    height: 400px;
-    width: 400px;
+    height: 330px;
+    width: 330px;
     overflow: hidden;
     margin-bottom: 0.7rem;
     position: relative;
@@ -52,10 +52,10 @@
     width: 100%;
     padding: 0.5rem;
     font-size: 0.9rem;
-    line-height: 1rem;
+    line-height: 0.9rem;
     box-sizing: border-box;
-    height: 4.5rem;
-    bottom: -4rem;
+    height: 3rem;
+    bottom: -3rem;
     transition: bottom 0.3s ease;
   }
 
@@ -84,68 +84,42 @@
     padding: 0 0.2rem;
   }
   div.name {
-    font-weight: 700;
+    font-weight: 600;
     color: var(--darkGrey);
-    font-size: 1.1rem;
+    font-size: 0.9rem;
+    line-height: 0.9rem;
   }
 
-  div.position {
+  /* div.position {
     color: var(--darkGrey);
     font-weight: 500;
     font-style: italic;
-  }
-  div.position,
-  div.contact {
     font-size: 0.9rem;
-    color: var(--darkGrey);
-  }
-  div.contact {
-    height: 0.9rem;
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-  }
-
-  div.contact > div {
-    width: 0.8rem;
-    margin: 0 0.2rem;
-  }
-
-  div.contact,
-  div.contact a {
-    color: var(--darkGrey);
-  }
-
-  div.contact a:hover {
-    color: #444 !important;
-  }
-
-  div.contact > div:first-child {
-    margin-left: 0;
-  }
+    line-height: 2rem;
+} */
 
   div.modal {
     position: fixed;
     top: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(255, 255, 255, 0.9);
     z-index: 48;
     display: flex;
     overflow-y: auto;
     overflow-x: hidden;
   }
 
-  .modal div.modalHead {
-    display: flex;
-    align-items: center;
-  }
-
   .modal div.modalContent {
-    min-width: 60%;
+    min-width: 90%;
     min-height: 60%;
     margin: auto;
     padding: 1rem;
+  }
+
+  .modal div.modalHead {
+    display: flex;
+    align-items: center;
   }
 
   .modal div.nameAndPosition > * {
@@ -156,58 +130,40 @@
   }
 
   div.modalHead > div.modalImageWrapper {
-    height: 4rem;
+    min-width: 30rem;
+    max-width: 45rem;
+    /* height: 4rem;
     width: 4rem;
-    border-radius: 50%;
+    border-radius: 50%; */
     overflow: hidden;
-    margin-right: 1.2rem;
+    margin-right: 2rem;
   }
 
   .modal div.modalImageWrapper picture > * {
+    /* max-height: 30rem; */
     height: 100%;
     width: 100%;
+    /*height: 100%;
+    width: 100%*/
   }
 
-  .modal div.modalContact {
+  /* .modal div.modalPosition {
     font-size: 0.9rem;
-    display: flex;
-    margin-bottom: 1rem;
+  } */
+
+  .modal div.modalBlurb {
+    font-size: 0.75rem;
+    line-height: 0.85rem;
+    font-weight: 300;
   }
 
-  .modal div.modalPosition {
-    font-size: 0.9rem;
-  }
-  .modal div.modalContact > a {
-    height: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-right: 1.5rem;
-    color: var(--darkGrey);
-    text-decoration: none;
-  }
-
-  .modal .iconWrapper {
-    width: 0.9rem;
-    height: 0.9rem;
-  }
-
-  .modal div.modalContact > a:hover {
-    color: #444 !important;
-  }
-
-  .modal div.modalContact > a > span {
-    margin-left: 0.4rem;
-    line-height: 1rem;
-  }
-
-  .modal p.blurb {
+  /*.modal p.blurb {
     margin: 1.5rem 0;
     line-height: 1.8rem;
-  }
+  }*/
 
   .modal h3 {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
 </style>
 
@@ -233,48 +189,11 @@
         </div>
         <div class="nameAndPosition">
           <h3>{selectedProject.name}</h3>
-          <div class="modalPosition">{selectedProject.position}</div>
+          <!-- <div class="modalPosition">{selectedProject.position}</div> -->
+          <div class="modalBlurb">{selectedProject.blurb}</div> <!--I added this just now-->
         </div>
       </div>
-      <p class="blurb">{selectedProject.blurb}</p>
-      <div class="modalContact">
-        {#if selectedProject.email}
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            on:click={stopPropagation}
-            href="mailto:{selectedProject.email}">
-            <span class="iconWrapper">
-              <FaEnvelope />
-            </span>
-            <span>Email</span>
-          </a>
-        {/if}
-        {#if selectedProject.linkedIn}
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            on:click={stopPropagation}
-            href="https://www.linkedin.com/in/{selectedProject.linkedIn}/">
-            <span class="iconWrapper">
-              <FaLinkedin />
-            </span>
-            <span>LinkedIn</span>
-          </a>
-        {/if}
-        {#if selectedProject.gitHub}
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            on:click={stopPropagation}
-            href="https://github.com/{selectedProject.gitHub}">
-            <span class="iconWrapper">
-              <FaGithub />
-            </span>
-            <span>GitHub</span>
-          </a>
-        {/if}
-      </div>
+      <!--<p class="blurb">{selectedProject.blurb}</p>-->
     </div>
   </div>
 {/if}
@@ -295,42 +214,7 @@
         </picture>
         <div class="caption">
           <div class="name">{project.name}</div>
-          <div class="position">{project.position}</div>
-          <div class="contact">
-            {#if project.email}
-              <div>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  on:click={stopPropagation}
-                  href="mailto:{project.email}">
-                  <FaEnvelope />
-                </a>
-              </div>
-            {/if}
-            {#if project.linkedIn}
-              <div>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  on:click={stopPropagation}
-                  href="https://www.linkedin.com/in/{project.linkedIn}">
-                  <FaLinkedin />
-                </a>
-              </div>
-            {/if}
-            {#if project.gitHub}
-              <div>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  on:click={stopPropagation}
-                  href="https://github.com/{project.gitHub}">
-                  <FaGithub />
-                </a>
-              </div>
-            {/if}
-          </div>
+          <!-- <div class="position">{project.position}</div> -->
         </div>
       </div>
     </div>
