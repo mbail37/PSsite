@@ -85,15 +85,15 @@
   <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script type="text/javascript">
     document.addEventListener("adobe_dc_view_sdk.ready", function(){
-      var adobeDCView = new AdobeDC.View({clientId: "<YOUR_CLIENT_ID>", divId: "adobe-dc-view"});
+      var adobeDCView = new AdobeDC.View({clientId: "86a5fb0d25034a7e9dc962d0985c4044", divId: "adobe-dc-view"});
       adobeDCView.previewFile({
         content:{location: {url: "https://github.com/pjsingal/personalsite/blob/master/static/QVFT-System-Guide.pdf"}},
         metaData:{fileName: "QVFT-System-Guide.pdf"}
-      }, {embedMode: "SIZED_CONTAINER"});
+      }, {enableLinearization: true}, {embedMode: "SIZED_CONTAINER"});
     });
   </script>
 
-  <div id="adobe-dc-view" style="height: 571px; width: 800px;"></div>
+  <!-- <div id="adobe-dc-view" style="height: 571px; width: 800px;"></div>
   <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script type="text/javascript">
     document.addEventListener("adobe_dc_view_sdk.ready", function(){
@@ -103,7 +103,7 @@
         metaData:{fileName: "QVFT-Mechatronics-Update.pdf"}
       }, {embedMode: "SIZED_CONTAINER"});
     });
-  </script>
+  </script> -->
 
   <!-- <div class="pdfWrapper2">
     <object
