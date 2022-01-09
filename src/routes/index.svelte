@@ -20,6 +20,9 @@
   <p>For my capstone project, I am involved in a year-long industry partnership with a manufacturer of heavy-duty electric vehicles. Our team is designing an optimized thermal management system that minimizes redundancy while maintaining the sensitive operating temperatures of Li-ion batteries, motors, and auxiliary components. We validate this design using multi-objective optimization techniques, which are computed using simulations and numerical models that we have developed. I am also completing an undergraduate thesis that involves using ANSYS Fluent to simulate turbulent, compressible flow through a rotating detonation engine fuel supply valve.</p>
   <p>Further information about these projects and other experiences is available in my CV and project summary. I am always looking to connect with like-minded people and exchange ideas. Please feel free to reach out!</p>
 
+  <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+  <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="patricksingal" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://ca.linkedin.com/in/patricksingal?trk=profile-badge">Patrick Singal</a></div>
+
   <h2>Contact Information</h2>
   <p>Email: p.singal@queensu.ca</p>
   <p>Phone: 647-938-8135</p>
