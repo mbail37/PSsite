@@ -22,9 +22,9 @@
 
 <style>
   .imageWrapper {
-    height: 1000px;
-    width: 1000px;
-    overflow: scroll;
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
     margin-bottom: 0.7rem;
     position: relative;
   }
