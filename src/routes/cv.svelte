@@ -51,8 +51,7 @@
   <p>
     <a
       href="Patrick-Singal-CV.pdf"
-      download
-      on:click={() => gtag('event', 'download cv')}>
+      download>
       Download CV here
     </a>
   </p>
