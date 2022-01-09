@@ -111,7 +111,7 @@
   }
 
   .modal div.modalContent {
-    min-width: 90%;
+    min-width: 60%;
     min-height: 60%;
     margin: auto;
     padding: 1rem;
@@ -130,29 +130,23 @@
   }
 
   div.modalHead > div.modalImageWrapper {
-    min-width: 30rem;
-    max-width: 45rem;
-    /* height: 4rem;
-    width: 4rem;
-    border-radius: 50%; */
+    height: 60vh;
     overflow: hidden;
-    margin-right: 2rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .modal div.modalImageWrapper picture > * {
-    /* max-height: 30rem; */
     height: 100%;
     width: 100%;
-    /*height: 100%;
-    width: 100%*/
   }
 
   /* .modal div.modalPosition {
     font-size: 0.9rem;
   } */
 
-  .modal div.modalBlurb {
-    font-size: 0.75rem;
+  .modal p.blurb {
+    font-size: 0.85rem;
     line-height: 0.85rem;
     font-weight: 300;
   }
@@ -163,7 +157,8 @@
   }*/
 
   .modal h3 {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    line-height:1rem;
   }
 </style>
 
@@ -187,13 +182,12 @@
               alt={selectedProject.name} />
           </picture>
         </div>
-        <div class="nameAndPosition">
-          <h3>{selectedProject.name}</h3>
-          <!-- <div class="modalPosition">{selectedProject.position}</div> -->
-          <div class="modalBlurb">{selectedProject.blurb}</div> <!--I added this just now-->
-        </div>
       </div>
-      <!--<p class="blurb">{selectedProject.blurb}</p>-->
+      <div class="nameAndPosition">
+        <br /><h3>{selectedProject.name}</h3><br />
+        <!-- <div class="modalPosition">{selectedProject.position}</div> -->
+        <p class="blurb">{selectedProject.blurb}</p> <!--I added this just now-->
+      </div>
     </div>
   </div>
 {/if}
