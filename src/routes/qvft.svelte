@@ -66,7 +66,7 @@
   <p>
     <a href="QVFT-Mechatronics-Update.pdf" download>Download Mechatronics Update</a>
   </p>
-  <div class="pdfWrapper1">
+  <!-- <div class="pdfWrapper1">
     <object
       width="100%"
       height="100%"
@@ -79,16 +79,28 @@
         src="QVFT-System-Guide.pdf"
         type="application/pdf" />
     </object>
-  </div>
+  </div> -->
 
-  <div id="adobe-dc-view" style="height: 360px; width: 500px;"></div>
+  <div id="adobe-dc-view" style="height: 720px; width: 500px;"></div>
   <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script type="text/javascript">
     document.addEventListener("adobe_dc_view_sdk.ready", function(){
       var adobeDCView = new AdobeDC.View({clientId: "<YOUR_CLIENT_ID>", divId: "adobe-dc-view"});
       adobeDCView.previewFile({
-        content:{location: www.github},
-        metaData:{fileName: "Bodea Brochure.pdf"}
+        content:{location: {url: "https://github.com/pjsingal/personalsite/blob/master/static/QVFT-System-Guide.pdf"}},
+        metaData:{fileName: "QVFT-System-Guide.pdf"}
+      }, {embedMode: "SIZED_CONTAINER"});
+    });
+  </script>
+
+  <div id="adobe-dc-view" style="height: 571px; width: 800px;"></div>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script type="text/javascript">
+    document.addEventListener("adobe_dc_view_sdk.ready", function(){
+      var adobeDCView = new AdobeDC.View({clientId: "<YOUR_CLIENT_ID>", divId: "adobe-dc-view"});
+      adobeDCView.previewFile({
+        content:{location: {url: "https://github.com/pjsingal/personalsite/blob/master/static/QVFT-Mechatronics-Update.pdf"}},
+        metaData:{fileName: "QVFT-Mechatronics-Update.pdf"}
       }, {embedMode: "SIZED_CONTAINER"});
     });
   </script>
