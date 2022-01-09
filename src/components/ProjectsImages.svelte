@@ -147,10 +147,14 @@
     font-size: 0.9rem;
   } */
 
-  .modal p.blurb {
+  .modal div.blurb {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     font-size: 0.9rem;
     line-height: 1.1rem;
     font-weight: 300;
+    text-align: justify;
+    text-justify: inter-word;
   }
 
   /*.modal p.blurb {
@@ -186,9 +190,39 @@
         </div>
       </div>
       <div class="nameAndPosition">
-        <br /><h3>{selectedProject.name}</h3><br />
-        <!-- <div class="modalPosition">{selectedProject.position}</div> -->
-        <p class="blurb">{selectedProject.blurb}</p> <!--I added this just now-->
+        <br /><h3>{selectedProject.name}</h3><br/>
+        <div class="blurb">{selectedProject.blurb[0]}</div>
+        {#if selectedProject.blurb[1]}
+          <div class="blurb">{selectedProject.blurb[1]}</div>
+        {/if}
+        {#if selectedProject.blurb[2]}
+          <div class="blurb">{selectedProject.blurb[2]}</div>
+        {/if}
+        {#if selectedProject.blurb[3]}
+          <div class="blurb">{selectedProject.blurb[3]}</div>
+        {/if}
+        {#if selectedProject.blurb[4]}
+          <div class="blurb">{selectedProject.blurb[4]}</div>
+        {/if}
+        {#if selectedProject.blurb[5]}
+          <div class="blurb">{selectedProject.blurb[5]}</div>
+        {/if}
+        {#if selectedProject.blurb[6]}
+          <div class="blurb">{selectedProject.blurb[6]}</div>
+        {/if}
+        {#if selectedProject.blurb[7]}
+          <div class="blurb">{selectedProject.blurb[7]}</div>
+        {/if}
+        {#if selectedProject.blurb[8]}
+          <div class="blurb">{selectedProject.blurb[8]}</div>
+        {/if}
+        {#if selectedProject.blurb[9]}
+          <div class="blurb">{selectedProject.blurb[9]}</div>
+        {/if}
+        {#if selectedProject.blurb[10]}
+          <div class="blurb">{selectedProject.blurb[10]}</div>
+        {/if}
+        <!-- <p>{selectedProject.blurb.join()}</p> -->
       </div>
     </div>
   </div>
@@ -196,7 +230,7 @@
 <div class="projects {selectedProject ? 'noScroll' : ''}">
   {#each projects as project}
     <div
-      class="portfolioProject {project.blurb ? 'clickable' : ''}"
+      class="portfolioProject {project.blurb.join("\n") ? 'clickable' : ''}"
       on:click={() => {
         if (project.blurb) {
           showProject(project);
@@ -210,7 +244,6 @@
         </picture>
         <div class="caption">
           <div class="name">{project.name}</div>
-          <!-- <div class="position">{project.position}</div> -->
         </div>
       </div>
     </div>
