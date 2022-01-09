@@ -100,8 +100,8 @@
       </li>
 
       <li>
-        <a class:selected={segment === 'dashboard'} href="dashboard">
-          QVFT Dash
+        <a class:selected={segment === 'qvft'} href="qvft">
+          QVFT
         </a>
       </li>
       <li>
