@@ -1,9 +1,9 @@
 import dateformat from "dateformat";
 
 function getData() {
-  const portfolioFile = require("../../../content/portfolio.json");
+  const projectsFile = require("../../../content/projects.json");
 
-  const portfolio = portfolioFile
+  const projects = projectsFile
     .filter(project => !project.hidden)
     .map(project => {
       return {
@@ -14,13 +14,13 @@ function getData() {
       };
     });
 
-  return { portfolio };
+  return { projects };
 }
 
 export function get(req, res) {
   res.writeHead(200, {
     "Content-Type": "application/json"
   });
-  const { portfolio } = getData();
-  res.end(JSON.stringify({ portfolio }));
+  const { projects } = getData();
+  res.end(JSON.stringify({ projects }));
 }

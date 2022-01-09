@@ -5,9 +5,13 @@
 
 <style>
     .dashboard {
-        position: fixed; 
+        position: absolute; 
         overflow: visible; 
-        top: 50px; 
+
+        /* position: absolute; 
+        overflow: hidden;  */
+
+        top: 19.2rem; 
         bottom: 0px; 
         right: 0px; 
         width: 100%; 
@@ -16,16 +20,18 @@
         z-index: 999999; 
         height: 100%;
     }
-
     @media only screen and (max-width: 600px) {
         .dashboard {
-            top: 100px; 
+            top: 19.2rem; 
         }
     }
 </style>
-  
+
+<svelte:head>
+  <title>Patrick Singal</title>
+</svelte:head>
+<PageHeader>QVFT Dash (Beta)</PageHeader> 
 <div>
     <!-- Embedded Dashboard Page-->
-    <iframe src="https://directorqvft.pythonanywhere.com/" class="dashboard" title="QVFT Dashboard (Beta)"></iframe>
+    <iframe src="https://directorqvft.pythonanywhere.com/" class="dashboard" title="QVFT Dash (Beta)"></iframe>
 </div>
-  

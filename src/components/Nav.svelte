@@ -91,13 +91,14 @@
     </div>
     <ul>
       <li>
-        <a class:selected={segment === 'portfolio'} href="portfolio">Design Portfolio</a>
-      </li>
-      <li>
         <a class:selected={segment === 'cv'} href="cv">
           CV
         </a>
       </li>
+      <li>
+        <a class:selected={segment === 'projects'} href="projects">Projects</a>
+      </li>
+
       <li>
         <a class:selected={segment === 'dashboard'} href="dashboard">
           QVFT Dash

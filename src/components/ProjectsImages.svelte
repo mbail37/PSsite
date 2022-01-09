@@ -3,7 +3,7 @@
   import FaEnvelope from "svelte-icons/fa/FaEnvelope.svelte";
   import FaLinkedin from "svelte-icons/fa/FaLinkedin.svelte";
   import FaGithub from "svelte-icons/fa/FaGithub.svelte";
-  export let portfolio;
+  export let projects;
 
   let selectedProject;
 
@@ -71,13 +71,13 @@
     }
   }
 
-  div.portfolio {
+  div.projects {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     margin: 3rem auto 0;
-    max-width: calc(370px * 3);
+    max-width: calc(370px * 4);
   }
   div.portfolioProject {
     display: flex;
@@ -105,7 +105,7 @@
     top: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.93);
     z-index: 48;
     display: flex;
     overflow-y: auto;
@@ -113,7 +113,7 @@
   }
 
   .modal div.modalContent {
-    min-width: 60%;
+    min-width: 70%;
     min-height: 60%;
     margin: auto;
     padding: 1rem;
@@ -132,7 +132,7 @@
   }
 
   div.modalHead > div.modalImageWrapper {
-    height: 68vh;
+    height: 73vh;
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
@@ -148,8 +148,8 @@
   } */
 
   .modal p.blurb {
-    font-size: 0.85rem;
-    line-height: 0.85rem;
+    font-size: 0.9rem;
+    line-height: 1.1rem;
     font-weight: 300;
   }
 
@@ -174,13 +174,13 @@
         <div class="modalImageWrapper">
           <picture class="portfolioProjectImage">
             <source
-              srcset="{`/portfolio/${selectedProject.image}`}.webp"
+              srcset="{`/projects/${selectedProject.image}`}.webp"
               type="image/webp" />
             <source
-              srcset="{`/portfolio/${selectedProject.image}`}.png"
+              srcset="{`/projects/${selectedProject.image}`}.png"
               type="image/jpeg" />
             <img
-              src="{`/portfolio/${selectedProject.image}`}.webp"
+              src="{`/projects/${selectedProject.image}`}.webp"
               alt={selectedProject.name} />
           </picture>
         </div>
@@ -193,8 +193,8 @@
     </div>
   </div>
 {/if}
-<div class="portfolio {selectedProject ? 'noScroll' : ''}">
-  {#each portfolio as project}
+<div class="projects {selectedProject ? 'noScroll' : ''}">
+  {#each projects as project}
     <div
       class="portfolioProject {project.blurb ? 'clickable' : ''}"
       on:click={() => {
@@ -204,9 +204,9 @@
       }}>
       <div class="imageWrapper">
         <picture class="portfolioProjectImage">
-          <source srcset="{`/portfolio/${project.image}`}.webp" type="image/webp" />
-          <source srcset="{`/portfolio/${project.image}`}.png" type="image/png" />
-          <img src="{`/portfolio/${project.image}`}.webp" alt={project.name} />
+          <source srcset="{`/projects/${project.image}`}.webp" type="image/webp" />
+          <source srcset="{`/projects/${project.image}`}.png" type="image/png" />
+          <img src="{`/projects/${project.image}`}.webp" alt={project.name} />
         </picture>
         <div class="caption">
           <div class="name">{project.name}</div>
