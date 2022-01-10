@@ -163,8 +163,10 @@
   }*/
 
   .modal h3 {
-    font-size: 1rem;
-    line-height:1rem;
+    font-size: 1.5rem;
+    line-height:1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
   }
 </style>
 
@@ -190,7 +192,7 @@
         </div>
       </div>
       <div class="nameAndPosition">
-        <br /><h3>{selectedProject.name}</h3><br/>
+        <div><h3>{selectedProject.name}</h3></div>
         <div class="blurb">{selectedProject.blurb[0]}</div>
         {#if selectedProject.blurb[1]}
           <div class="blurb">{selectedProject.blurb[1]}</div>
