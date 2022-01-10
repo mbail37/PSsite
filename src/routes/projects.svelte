@@ -22,5 +22,5 @@
 <svelte:head>
   <title>Patrick Singal</title>
 </svelte:head>
-<PageHeader>Projects</PageHeader>
+<PageHeader>Design Projects</PageHeader>
 <ProjectsImages {projects} />

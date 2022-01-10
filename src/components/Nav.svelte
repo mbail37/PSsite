@@ -96,7 +96,7 @@
         </a>
       </li>
       <li>
-        <a class:selected={segment === 'projects'} href="projects">Design Projects</a>
+        <a class:selected={segment === 'projects'} href="projects">Projects</a>
       </li>
 
       <li>
