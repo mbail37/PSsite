@@ -8,6 +8,17 @@
   }
 </script>
 
+<style>
+  div.textLine {
+    margin-top: 1rem;
+    margin-bottom: -2rem;
+    text-align: center;
+    font-size: 0.8rem;
+    font-style: italic;
+    font-weight: 100;
+  }
+</style>
+
 <script>
   import { onMount } from "svelte";
   import ProjectsImages from "../components/ProjectsImages.svelte";
@@ -23,4 +34,7 @@
   <title>Patrick Singal</title>
 </svelte:head>
 <PageHeader>Design Projects</PageHeader>
+<div class="textLine">
+  <p>Click on a project to learn more!</p>
+</div>
 <ProjectsImages {projects} />
